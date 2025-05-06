@@ -1,0 +1,361 @@
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+ul, li, a{
+    text-decoration: none;
+    list-style: none;
+}
+
+p, a, td, th{
+    font-size: 1.6rem;;
+}
+
+/* DESIGN SYSTEM : COLORS */
+
+:root {
+    --white: rgb(255, 255, 255);
+    --coal: rgb(44, 44, 44);
+    --gold: rgb(188, 164,76);
+    --primary: rgb(21, 133, 146);
+    --clay: rgb(169, 169, 169);
+}
+
+/* DESIGN SYSTEM : BUTTONS */
+
+.button {
+    border-radius: 1rem;
+    padding: 1rem 4.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+.button--white{
+    background-color: var(--white);
+    color: var(--coal);
+}
+
+.button--dark{
+    background-color: var(--coal);
+    color: var(--white);
+}
+
+.button--white:hover, .button--dark:hover{
+    background-color: var(--gold);
+    color: var(--white);
+}
+
+/* DESIGN SYSTEM : H2 */
+
+.information h2, .carousel h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.introduction h2, .information__schedule h2{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* BODY */
+
+body{
+    align-items: center;
+    min-width: 100%;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../img/dordogne.webp");
+    background-size: cover;
+}
+
+header::after{
+    content: '';
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+header h1{
+    position: absolute;
+    top: 45%;
+    font-family: 'Playfair Display';
+    color: var(--coal);
+    font-size: clamp(5rem, 8vw, 8.5rem);
+    z-index: 2;
+}
+
+/* HEADER LOGO */
+
+.header__logonav{
+    width: 100%;
+    margin: 5rem 0;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+
+.header__logonav img{
+    max-height: 10rem;
+}
+
+/* HEADER NAV */
+
+.header__logonav nav ul{
+    display: flex;
+    border-top: 0.1rem solid var(--coal);
+    padding: 1rem 0;
+
+}
+
+.header__logonav nav ul li a{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 4.5rem;
+    color: var(--coal);
+    transition: all 0.2s ease-in-out;
+}
+
+.header__logonav nav ul li a:hover{
+    background-color: var(--gold);
+    border-radius: 0 0 1rem 1rem;
+    color: var(--white);
+}
+
+/* INTRODUCTION SECTION */
+
+.introduction{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+    color: var(--white);
+}
+
+.introduction p{
+    font-size: 2rem;
+    max-width: 100rem;
+}
+
+.accent{
+    font-family: "Playwrite RO", cursive;
+    font-size: 3.5rem;
+    color: var(--gold);
+}
+
+.accent-second{
+    color: var(--gold);
+}
+
+.introduction p{
+    margin-bottom: 5rem;
+}
+
+
+/* VIDEO SECTION */
+
+.introduction__video{
+    margin-top: 5rem;
+}
+
+.introduction__video iframe{
+    width: clamp(30rem, 80vw, 80rem);
+    height: clamp(5rem, 90vw, 50rem);
+    padding: 2rem;
+    border: solid 0.2rem rgba(255, 255, 255, 0.8);
+    border-radius: 2rem;
+}
+
+/* INFORMATION SECTION */
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.information a{
+    font-weight: 600;
+    color: var(--coal);
+    transition: all 0.2s ease-in-out;
+}
+
+.information a:hover {
+    color: var(--gold);
+}
+
+.information__container{
+    gap: 10rem;
+}
+
+.information__container section{
+    min-width: 20rem;
+}
+
+.information__container, .information__schedule{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8rem 0;
+    width: 100%;
+}
+
+/* SCHEDULE */
+
+.information__schedule{
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--coal);
+    color: var(--white);
+
+}
+
+table, th, td{
+    text-align: center;
+    border-spacing: 1rem;
+}
+
+th, td{
+    padding: 0 0 0 5rem;
+}
+
+th{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+th, td{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.information__title{
+    background-color: var(--white);
+    color: var(--coal);
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+
+/* CONTACT FORM */
+
+.contact-form{
+    padding: 8rem 0;
+}
+
+.contact-form, .contact-form form ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form form ul{
+    align-items: flex-start;
+}
+
+.contact-form form ul{
+    gap: 3rem;
+}
+
+.contact-form form label{
+    display: block;
+    padding: 0 0 1.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact-form form label, .contact-form form textarea, .contact-form form ::placeholder {
+    font-size: 1.4rem;
+}
+
+.contact-form form input:not(.button--dark), .contact-form form textarea{
+    min-height: 4rem;
+    border: 0.2rem solid var(--clay);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-form .button--dark{
+    padding: 1.5rem;
+}
+
+.contact-form form input, .contact-form form textarea{
+    width: clamp(30rem, 50vw, 50rem);
+}
+
+/* CAROUSEL */
+
+.carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__images{
+    display: grid;
+    min-width: 100%;
+    min-height: 30rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.carousel__images img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gold);
+}
+
+footer a, footer p{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+footer a{
+    font-weight: 700;
+}

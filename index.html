@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Périgord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <section class="header__logonav">
+            <img src="img/logo.png" alt="Périgord tourisme">
+        
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Le Périgord</a></li>
+                <li><a href="#">Notre gite</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </section>
+        <h1>Contactez<span class="accent-second">-</span>nous</h1>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>Gourmandises <span class="accent">&</span> partage</h2>
+            <p>Nous serons très heureux de vous accueillir à la <strong>Ferme Gourmande</strong> afin de vous faire partager l'amour de notre région et de vous faire découvrir toutes nos plus belles spécialités. Vous ne connaissez pas le Périgord Noir ?</p>
+            <a href="#" class="button button--white">Réservez vite</a>
+            <div class="introduction__video">
+                <iframe src="https://www.youtube.com/embed/6KUnoIRkhzc?si=C4jnrji4CJlthi8h" title="Périgord Noir" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="information">
+
+            <div class="information__container">
+                <section class="information__adress">
+                    <h2>Adresse</h2>
+                    <p>10 impasse du Breil, <br>24260 Le Bugues</p>
+                </section>
+
+                <section class="information__telephone">
+                    <h2>Téléphone</h2>
+                    <a href="tel:0782237810">07 82 23 78 10</a>
+                </section>
+
+                <section class="information__mail">
+                    <h2>Notre email</h2>
+                    <a href="mailto:contact@lafermegourmande.com">contact@lafermegourmande.com</a>
+                </section>
+            </div>
+
+            <section class="information__schedule">
+                <h2>Nos horaires</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="information__title">Jours</th>
+                            <th>Lundi</th>
+                            <th>Mardi au Jeudi</th>
+                            <th>Vendredi au Dimanche</th>
+                        </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <th class="information__title">Horaires</th>
+                            <td>Fermé</td>
+                            <td>8h à 19h</td>
+                            <td>8h à 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </section>
+
+        <section class="contact-form">
+            <form>
+                <ul>
+
+                    <li><label>Nom</label>
+                        <input type="text" placeholder="Nom"></li>
+                    <li><label>Prénom</label>
+                        <input type="text" placeholder="Prénom"></li>
+                    <li><label>Email</label>
+                        <input type="email" placeholder="Email"></li>
+                    <li><label>Téléphone</label>
+                        <input type="tel" placeholder="Email"></li>
+                    <li><label>Message</label>
+                        <textarea placeholder="Écrivez-nous" rows="5" cols="33"></textarea></li>
+                    <li><input type="button" value="Envoyer" class="button button--dark"></li>
+
+                    </ul>
+            </form>
+        </section>
+
+        <section class="carousel">
+            <h2>C'est trop beau le Périgord</h2>
+            <figure class="carousel__images"><img src="img/périgord.jpg" alt="Le Périgord" height="200"> <img src="img/périgord2.jpg" alt="Le Périgord" height="200"> <img src="img/périgord3.jpg" alt="Le Périgord" height="200"></figure>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright 2019 - <a href="#">Office du tourisme du Périgord</a></p>
+    </footer>
+</body>
+</html>
